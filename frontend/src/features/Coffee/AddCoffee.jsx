@@ -66,35 +66,35 @@ export default function AddCoffee(){
     {errors && <h4>{JSON.stringify(errors)}</h4>}
 
 
-    <div>
-        <label htmlFor="coffeeName">Coffee Name:</label>
-        <input value={coffeeName} name="coffeeName" onChange={handleCoffeeNameChange}></input>
+    <div className="share-input">
+        {/* <label htmlFor="coffeeName">Coffee Name:</label> */}
+        <input placeholder='Coffee Name' value={coffeeName} name="coffeeName" onChange={handleCoffeeNameChange}></input>
     </div>
 
-    <div>
-        <label htmlFor="description">Description:</label>
-        <input value={description} name="description" onChange={handleDescriptionChange}></input>
+    <div className="share-input">
+        {/* <label htmlFor="description">Description:</label> */}
+        <textarea className='input-description' placeholder='Description' value={description} name="description" onChange={handleDescriptionChange}></textarea>
     </div>
 
-    <div>
-        <label htmlFor="caffeine">Caffeine:</label>
-        <input value={caffeine} name="caffeine" onChange={handleCaffeineChange}></input>
+    <div className="share-input">
+        {/* <label htmlFor="caffeine">Caffeine:</label> */}
+        <input placeholder='Caffeine Content: mg/serving' value={caffeine} name="caffeine" onChange={handleCaffeineChange}></input>
     </div>
 
-    <div>
-        <label htmlFor="rating">Rating:</label>
-        <input value={rating} name="rating" onChange={handleRatingChange}></input>
+    <div className="share-input">
+        {/* <label htmlFor="rating">Rating:</label> */}
+        <input placeholder='Rating' value={rating} name="rating" onChange={handleRatingChange}></input>
     </div>
 
-    <div>
-        <label htmlFor="coffeeImage">Coffee Image: </label>
+    <div className="share-input">
+        {/* <label htmlFor="coffeeImage">Coffee Image: </label> */}
         <input type="file" name="coffeeImage" onChange={handlePictureChange}></input>
     </div>
     
-    <div>
-    <button onClick={handleSubmit}>Submit</button>
+    <div className="share-submit">
+    <button className='share-button' onClick={handleSubmit}>Submit</button>
     </div>
-    
+     
     </div>
     </div>
     

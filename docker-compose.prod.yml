@@ -13,6 +13,8 @@ services:
       - DB_NAME=$POSTGRES_DB
       - DB_USER=$POSTGRES_USER
       - DB_PASS=$POSTGRES_PASSWORD
+      - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
     depends_on:
       - db
   nginx:

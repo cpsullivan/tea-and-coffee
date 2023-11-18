@@ -3,12 +3,9 @@ body {
     padding: 0;
 }
 
-.coffee-thumbnail{
-    height: 200px;
-    width: 200px;
+.body {
+    min-height: 92.5vh;
 }
-
-/* AddCoffee.css */
 
 .modal-overlay {
     position: fixed;
@@ -19,7 +16,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
   }
   
-  .modal-content {
+.modal-content {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -27,42 +24,115 @@ body {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    width: 400px;
+    width: 20%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
 
-  .coffee-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.modal-content h1 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px dotted black;
+    padding-bottom: 10px;
+}
+
+.share-input {
+    display: flex;
+    margin: 5px;
+    justify-content: left;
+}
+
+.share-input input {
+    border-radius: 1px;
+}
+
+.input-description {
+    border-radius: 1px;
+    height: 20px;
+    box-shadow: rgba(0, 0, 0, 0.379);
+}
+
+.input-description:focus {
+    height: 100px;
+    width: 100%;
+}
+
+.share-submit {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    height: 33px;
+    margin-top: 25px;
+}
+
+.share-button {
+    width: 50%;
+    border-radius: 45px;
 }
 
 .coffee-card {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 20px;
+    margin-inline: 20%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 30px
+    ;
+}
+
+.coffee-header-image {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.coffee-card img {
+.coffee-header-image img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    max-width: 100%;
+    border-radius: 45px;
 }
 
-.coffee-card h2 {
-    font-size: 1.5rem;
-    margin-top: 10px;
+.coffee-header-image h1 {
+    padding: 10px;
+   padding-bottom: 30px;
 }
 
-.coffee-card p {
-    flex-grow: 1;
+.coffee-interactive-info {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+.coffee-interactive-info p {
+    justify-self: center;
+    align-self: center;
+    font-size: x-large;
 }
 
-.coffee-card h4 {
-    margin-top: 10px;
+.interactive-footer {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.interactive-footer h4 {
+    display: flex;
+    /* border: 1px solid rgba(0, 0, 0, 0.281); */
+    padding: 7px;
+    border-radius: 10px;
+    width: 18%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add-a-coffee {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
 }
